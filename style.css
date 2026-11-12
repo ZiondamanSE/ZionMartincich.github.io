@@ -1,0 +1,106 @@
+
+:root {
+    --bg: #0e1620;          /* deep navy background */
+    --panel: #172433;       /* blue-slate panels */
+    --panel-light: #1f3347;
+    --border: #2d4a66;     
+    --text: #e6edf3;        
+    --text-dim: #8fa6bb;    
+    --accent: #f08a1c;      
+    --accent-hover: #ffa63d;
+    --blue: #4aa3df;        /* bright blue for links */
+}
+
+body {
+    background-color: var(--bg);
+    flex-flow: column;
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--text);
+    background-color: var(--panel);
+    border-left: 6px solid var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 15px;
+}
+
+p {
+    line-height: 1.5;
+    color: var(--text);
+}
+
+a,
+link {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+button {
+    background-color: var(--accent);
+    color: #0e1620;
+    border: 1px solid var(--accent-hover);
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
+
+/* about me page */
+.aboutme {
+    display: block;
+    background-color: var(--panel);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    max-width: 100%;
+    border: 1px solid var(--border);
+}
+
+.contactInfo {
+    background-color: var(--panel);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--blue);
+    padding: 10px 15px;
+}
+
+.contactInfo p {
+    color: var(--text-dim);
+}
+
+.playmusic {
+    margin-bottom: 20px;
+}
+
+/* project listing page */
+table {
+    width: 100%;
+}
+
+td div {
+    background-color: var(--panel);
+    outline: 1px solid var(--border) !important; /* overrides the inline black outline */
+}
+
+/* like a selected server row: orange highlight on hover */
+td div:hover {
+    background-color: var(--panel-light);
+    outline: 2px solid var(--accent) !important;
+}
+
+td img {
+    max-width: 100%;
+    max-height: 100%;
+    color: var(--text-dim); /* alt text color while images are empty */
+}
